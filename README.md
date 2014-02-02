@@ -47,10 +47,9 @@ A gallery for your [IMGUR Album](http://api.imgur.com/models/album)
 
 ## History
 
-* v0.0.1 August 19, 2013
+* v0.0.1 Feb 1, 2014
 	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
 
 ## License
 [MIT License](http://opensource.org/licenses/MIT)
 
-[Inspired by wu-weather](https://github.com/Polymer/wu-weather)

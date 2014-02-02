@@ -12,7 +12,7 @@
   "description": "image gallery using the imgur API",
   "main": "index.html",
   "keywords": [
-    "image", "photo", "gallery","imgur"
+    "image", "photo", "gallery","imgur",
     "component",
     "polymer.js"
   ],

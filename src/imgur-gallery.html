@@ -1,31 +1,19 @@
-<polymer-element name="imgur-gallery" attributes="autoupdate">
+<polymer-element name="imgur-gallery" attributes="album clientid">
   <template>
     <style>
       :host {
       }
 
       .container {
-      	color: #555;
-		    text-transform: uppercase;
-        font-size: 1.5rem;
-        padding:9px; 
-        padding-bottom: 0px;
       }
-
-      img { width: 100%;}
-      
-      h1, h2, h3, h4, h5, h6 { font-weight: normal;}
-      a:visited { color: #4D4D4D;}
-      a { text-decoration: none; color: #4D4D4D; }
- 
+  
     </style>
     <div class="container">
 
     </div>
-     <polymer-ajax auto url="https://api.imgur.com/3/album/u1Lu5" headers='{"Authorization": "Client-ID a0689aa19f7d2fa"}' 
+     <polymer-ajax auto url="https://api.imgur.com/3/album/{{album}}" headers='{"Authorization": "Client-ID {{clientid}}"}' 
      handleAs="json" response="{{albumResponse}}" on-polymer-response="{{handleAlbumResponse}}">
      </polymer-ajax>
-
        <template repeat="{{albumResponse.data.images}}">
          <div> 
           <img src="{{link}}" title="{{title}}"/>
@@ -40,7 +28,7 @@
       albumResponse: null,
 
       enteredView: function() {
-        console.log('## enteredView()', this.albumResponse);
+        console.log('## enteredView()', this.albumResponse, this.album);
       },
       leftView: function() {},
 

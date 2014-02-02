@@ -31,10 +31,10 @@ A gallery for your [IMGUR Album](http://api.imgur.com/models/album)
 	<link rel="import" href="src/imgur-gallery.html">
 	```
 
-3. Start using it!
+3. Start using it! (specify album name & clientid)
 
 	```html
-	<imgur-gallery></imgur-gallery>
+	<imgur-gallery album="u1Lu5" clientid="xxyyzz"></imgur-gallery>
 	```
 
 ## Contributing
@@ -47,10 +47,9 @@ A gallery for your [IMGUR Album](http://api.imgur.com/models/album)
 
 ## History
 
-* v0.0.1 August 19, 2013
+* v0.0.1 Feb 1, 2014
 	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
 
 ## License
 [MIT License](http://opensource.org/licenses/MIT)
 
-[Inspired by wu-weather](https://github.com/Polymer/wu-weather)

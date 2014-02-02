@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>&lt;imgur-gallery&gt;</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- Importing Web Component's Polyfill -->
+	
+    <script src="bower_components/platform/platform.js"></script>
+  
+    <link rel="import" href="bower_components/polymer-ajax/polymer-ajax.html"/>
+  
+    <style type="text/css">
+        body { margin:0;}
+    	imgur-gallery{
+    		display:block; 
+    		border: 1px solid #ccc; 
+    		border-radius: 7px;
+    		width:100%;
+    		margin: auto;
+    	}
+
+    	imgur-gallery > div.container {
+    		border-radius: 6px;
+    	}
+    </style>
+
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.1/platform.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.1/polymer.js"></script>
+	-->
+	<!-- Importing Custom Elements -->
+	<link rel="import" href="src/imgur-gallery.html">
+</head>
+<body>
+	<div style="width:320px; margin:auto; font-size: 1.4rem; text-align:center">Demo of &lt;imgur-gallery&gt;</div>
+	<!-- Using Custom Elements -->
+	<imgur-gallery></imgur-gallery>
+
+</body>
+</html>

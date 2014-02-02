@@ -1,0 +1,27 @@
+{
+  "name": "imgur-gallery",
+  "version": "0.0.0",
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "polymer-ajax": "Polymer/polymer-ajax#master"
+  },
+  "homepage": "https://github.com/bradoyler/imgur-gallery",
+  "authors": [
+    "Brad Oyler <bradoyler@gmail.com>"
+  ],
+  "description": "image gallery using the imgur API",
+  "main": "index.html",
+  "keywords": [
+    "image", "photo", "gallery","imgur"
+    "component",
+    "polymer.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
